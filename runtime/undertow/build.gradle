@@ -58,3 +58,11 @@ task unzipFlit(type: Copy) {
   from configurations.testFlit.findAll { it.name.endsWith('zip') }.collect { zipTree(it) }
   into flitDir
 }
+
+publishing {
+  publications {
+    PubBintray(MavenPublication) {
+      from components.java
+    }
+  }
+}

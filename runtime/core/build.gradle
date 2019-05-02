@@ -17,3 +17,11 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
 }
+
+publishing {
+    publications {
+        PubBintray(MavenPublication) {
+            from components.java
+        }
+    }
+}

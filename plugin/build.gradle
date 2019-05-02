@@ -69,3 +69,12 @@ artifacts {
   zip pack
 }
 
+publishing {
+    publications {
+        PubBintray(MavenPublication) {
+            from components.java
+            artifact pack
+        }
+    }
+}
+
