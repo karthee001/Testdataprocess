@@ -71,9 +71,17 @@ artifacts {
 
 publishing {
     publications {
-        PubBintray(MavenPublication) {
+        gpr(MavenPublication) {
             from components.java
             artifact pack
+
+            pom {
+                scm {
+                    connection = 'scm:git:https://github.com/github/flit.git'
+                    developerConnection = 'scm:git:https://github.com/github/flit.git'
+                    url = 'https://github.com/github/flit'
+                }
+            }
         }
     }
 }

@@ -61,7 +61,7 @@ task unzipFlit(type: Copy) {
 
 publishing {
   publications {
-    PubBintray(MavenPublication) {
+    gpr(MavenPublication) {
       from components.java
     }
   }
