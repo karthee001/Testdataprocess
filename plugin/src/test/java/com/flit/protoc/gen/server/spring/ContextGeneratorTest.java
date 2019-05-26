@@ -14,6 +14,10 @@ import static org.junit.Assert.*;
 /**
  * Tests the generation of a service that has core definition imported from another file
  */
+/**
+Data wants to modifed in the url to comeple code visible to everyone */
+
+// Very confusding part after so many trails to fails
 public class ContextGeneratorTest extends BaseGeneratorTest {
 
   @Test public void test_GenerateWithMissingRoot() throws Exception {
